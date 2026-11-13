@@ -184,5 +184,29 @@ public class MoniRecipeTypes {
             .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, ProgressTexture.FillDirection.LEFT_TO_RIGHT)
             .setSound(GTSoundEntries.COMBUSTION);
 
+    public static GTRecipeType VIRTUAL_PARTICLE_SYNTHESIS_RECIPES = GTRecipeTypes
+            .register("virtual_particle_synthesis", "multiblock", new RecipeType[0])
+            .setEUIO(IO.IN)
+            .setMaxIOSize(6, 4, 6, 4)
+            .setSlotOverlay(false, false, GuiTextures.ARROW_INPUT_OVERLAY)
+            .setProgressBar(MoniGuiTextures.PROGRESS_BAR_SIMULATION, FillDirection.LEFT_TO_RIGHT)
+            .setSound(MoniSounds.MICROVERSE)
+            .addDataInfo((data) -> {
+                 String info = "";
+         if (data.m_128441_("quantum_rule_input")) {
+            info = info + I18n.m_118938_("emi_info.monilabs.quantum_rule_base_in", new Object[]{I18n.m_118938_("emi_info.monilabs.quantum_rule_" + data.m_128461_("quantum_rule_input"), new Object[0])}) + "\n";
+             }
+             return info;
+         })
+            .addDataInfo((data) -> "").addDataInfo((data) -> {
+         String info = "";
+         if (data.m_128441_("quantum_rule_output")) {
+            info = info + I18n.m_118938_("emi_info.monilabs.quantum_rule_base_out", new Object[]{I18n.m_118938_("emi_info.monilabs.quantum_rule_" + data.m_128461_("quantum_rule_output"), new Object[0])}) + "\n";
+         }
+
+         return info;
+      })
+            .addDataInfo((data) -> "");
+
     public static void init() {}
 }

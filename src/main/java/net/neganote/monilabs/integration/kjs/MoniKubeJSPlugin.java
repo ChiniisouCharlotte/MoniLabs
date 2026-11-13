@@ -57,6 +57,7 @@ public class MoniKubeJSPlugin extends KubeJSPlugin {
         event.add("PrismaticColor", Color.class);
         event.add("SpecialCase", MoniRecipeSchema.SpecialCase.class);
         event.add("Microverse", Microverse.class);
+        event.add("QuantumRule", MoniRecipeSchema.QuantumRule.class);
 
         // Specific Machines
         event.add("AntimatterGeneratorMachine", AntimatterGeneratorMachine.class);
@@ -66,7 +67,7 @@ public class MoniKubeJSPlugin extends KubeJSPlugin {
         event.add("OmnicSynthesizerMachine", OmnicSynthesizerMachine.class);
         event.add("PrismaticCrucibleMachine", PrismaticCrucibleMachine.class);
         event.add("SculkVatMachine", SculkVatMachine.class);
-
+        
         // Rendering
         event.add("MoniDynamicRenderHelper", MoniDynamicRenderHelper.class);
     }

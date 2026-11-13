@@ -16,7 +16,8 @@ public enum PackMode {
 
     NORMAL,
     HARD,
-    EXPERT;
+    EXPERT,
+    INSANITY;
 
     private static final Logger LOGGER = LogManager.getLogger("MoniLabs-PackMode");
 

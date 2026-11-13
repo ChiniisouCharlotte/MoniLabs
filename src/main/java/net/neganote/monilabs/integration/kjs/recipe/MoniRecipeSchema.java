@@ -1,5 +1,6 @@
 package net.neganote.monilabs.integration.kjs.recipe;
 
+import com.gregtechceu.gtceu.api.capability.recipe.IO;
 import com.gregtechceu.gtceu.integration.kjs.recipe.GTRecipeSchema;
 
 import net.neganote.monilabs.capability.recipe.ChromaIngredient;

@@ -22,6 +22,7 @@ public class MoniJadePlugin implements IWailaPlugin {
         registration.registerBlockDataProvider(new MicroverseInfoBlockProvider(), BlockEntity.class);
         registration.registerBlockDataProvider(new SculkVatXPProvider(), BlockEntity.class);
         registration.registerBlockDataProvider(new OmnicSynthProgressProvider(), BlockEntity.class);
+        registration.registerBlockDataProvider(new VirtualParticleSynthQuantumProvider(), BlockEntity.class);
     }
 
     @Override
@@ -30,5 +31,6 @@ public class MoniJadePlugin implements IWailaPlugin {
         registration.registerBlockComponent(new MicroverseInfoBlockProvider(), Block.class);
         registration.registerBlockComponent(new SculkVatXPProvider(), Block.class);
         registration.registerBlockComponent(new OmnicSynthProgressProvider(), Block.class);
+        registration.registerBlockComponent(new VirtualParticleSynthQuantumProvider(), Block.class);
     }
 }

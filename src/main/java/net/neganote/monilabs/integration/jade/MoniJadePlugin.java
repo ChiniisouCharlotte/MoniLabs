@@ -6,6 +6,7 @@ import net.neganote.monilabs.integration.jade.provider.MicroverseInfoBlockProvid
 import net.neganote.monilabs.integration.jade.provider.OmnicSynthProgressProvider;
 import net.neganote.monilabs.integration.jade.provider.PrismaticColorBlockProvider;
 import net.neganote.monilabs.integration.jade.provider.SculkVatXPProvider;
+import net.neganote.monilabs.integration.jade.provider.VirtualParticleSynthQuantumProvider;
 
 import snownee.jade.api.IWailaClientRegistration;
 import snownee.jade.api.IWailaCommonRegistration;
